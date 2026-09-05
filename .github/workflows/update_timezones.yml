@@ -1,3 +1,7 @@
+# Developed by Ramazan Çetinkaya (https://github.com/ramazancetinkaya)
+# Copyright (c) 2026 Ramazan Çetinkaya. All rights reserved.
+# Licensed under the MIT License.
+
 name: Weekly Timezone & GMT Offset Sync
 
 on:
