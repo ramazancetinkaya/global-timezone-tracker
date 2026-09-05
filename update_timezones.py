@@ -1,3 +1,11 @@
+"""
+Global Timezone & GMT Offset Tracker
+Developed by Ramazan Çetinkaya (https://github.com/ramazancetinkaya)
+
+Copyright (c) 2026 Ramazan Çetinkaya. All rights reserved.
+Licensed under the MIT License.
+"""
+
 import datetime
 import json
 import os
