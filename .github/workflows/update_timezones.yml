@@ -1,25 +1,26 @@
-name: Update Country Timezones & Offsets
+name: Weekly Timezone & GMT Offset Sync
 
 on:
   schedule:
-    # Runs every Sunday at 00:00 UTC
+    # Runs at 00:00 UTC every Sunday
     - cron: '0 0 * * 0'
-  workflow_dispatch: # Allows manual trigger from Actions tab
+  workflow_dispatch:
 
-permissions:
-  contents: write
+concurrency:
+  group: timezone-sync
+  cancel-in-progress: true
 
 jobs:
   sync-timezones:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: Set up Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -30,22 +31,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Execute Timezone Sync Script
-        id: run_script
-        run: |
-          python update_timezones.py
+      - name: Execute Sync Script
+        run: python update_timezones.py
 
       - name: Commit and Push Changes
         if: always()
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          git add README.md timezones.json last_run.json
+          git add timezones.json README.md last_run.json
           
           if git diff --staged --quiet; then
-            echo "No timezone changes detected. Working tree clean."
+            echo "No changes detected. Skipping commit."
           else
-            git commit -m "chore(auto): update global timezones and execution logs [skip ci]"
+            git commit -m "chore(data): auto-update timezone offsets and execution status"
             git push
           fi
