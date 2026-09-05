@@ -32,7 +32,7 @@ def update_last_run(status: str, error_message: str = None) -> None:
 
 
 def get_current_offset_data(tz_name: str, now_utc: datetime.datetime) -> dict:
-    """Calculates active GMT offset and Daylight Saving Time (DST) status for a zone."""
+    """Calculates active GMT/UTC offset and Daylight Saving Time (DST) status."""
     tz = pytz.timezone(tz_name)
     localized_time = now_utc.astimezone(tz)
 
@@ -88,21 +88,50 @@ def collect_world_timezones() -> list:
 
 
 def generate_markdown(dataset: list, execution_time: str) -> str:
-    """Builds a scannable, modern Markdown table."""
+    """Builds an enterprise-grade, clean Markdown document without icons."""
     total_countries = len(dataset)
     total_zones = sum(len(c["zones"]) for c in dataset)
 
     md = [
-        "# Global Country Timezone & GMT Offsets",
+        "# Global Country Timezone and UTC/GMT Dataset",
         "",
-        "> Automated weekly tracker capturing real-time UTC/GMT offsets and active Daylight Saving Time (DST) changes.",
+        "An automated reference tracking real-time UTC/GMT offsets, Daylight Saving Time (DST) transitions, and ISO 3166-1 country mappings. Updated weekly via GitHub Actions.",
         "",
-        f"- **Last Updated:** `{execution_time} (UTC)`",
-        f"- **Tracked Countries:** `{total_countries}`",
-        f"- **Total Timezones:** `{total_zones}`",
-        "- **Data Export:** [`timezones.json`](./timezones.json) | **Run Telemetry:** [`last_run.json`](./last_run.json)",
+        "## Dataset Metadata",
         "",
-        "| Country | Alpha-2 | Timezone Identifier | Current Offset | DST Active |",
+        "| Metric | Specification |",
+        "| :--- | :--- |",
+        f"| Last Synchronization | {execution_time} UTC |",
+        f"| Countries Tracked | {total_countries} |",
+        f"| Timezones Tracked | {total_zones} |",
+        "| Update Cadence | Weekly (Every Sunday at 00:00 UTC) |",
+        "| Raw Data Export | [timezones.json](./timezones.json) |",
+        "| Pipeline Telemetry | [last_run.json](./last_run.json) |",
+        "",
+        "## Data Schema",
+        "",
+        "The compiled `timezones.json` provides a clean and uniform structure suitable for direct consumption in backend or frontend applications:",
+        "",
+        "```json",
+        "[",
+        "  {",
+        '    "country_code": "TR",',
+        '    "country_name": "Turkey",',
+        '    "zones": [',
+        "      {",
+        '        "timezone": "Europe/Istanbul",',
+        '        "gmt_offset": "UTC+03:00",',
+        '        "offset_seconds": 10800,',
+        '        "is_dst": false',
+        "      }",
+        "    ]",
+        "  }",
+        "]",
+        "```",
+        "",
+        "## Active Reference Table",
+        "",
+        "| Country | ISO Code | Timezone Identifier | UTC Offset | DST Active |",
         "| :--- | :---: | :--- | :---: | :---: |",
     ]
 
@@ -117,7 +146,20 @@ def generate_markdown(dataset: list, execution_time: str) -> str:
                 f"| {country_display} | {code_display} | `{z['timezone']}` | `{z['gmt_offset']}` | {dst_flag} |"
             )
 
-    md.append("")
+    md.extend(
+        [
+            "",
+            "## Author",
+            "",
+            "Developed by [Ramazan Çetinkaya](https://github.com/ramazancetinkaya)",
+            "",
+            "## License",
+            "",
+            "Distributed under the MIT License. See [LICENSE](./LICENSE) for details.",
+            "",
+        ]
+    )
+
     return "\n".join(md)
 
 
