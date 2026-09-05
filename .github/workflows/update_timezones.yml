@@ -1,0 +1,51 @@
+name: Update Country Timezones & Offsets
+
+on:
+  schedule:
+    # Runs every Sunday at 00:00 UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch: # Allows manual trigger from Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  sync-timezones:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Execute Timezone Sync Script
+        id: run_script
+        run: |
+          python update_timezones.py
+
+      - name: Commit and Push Changes
+        if: always()
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          git add README.md timezones.json last_run.json
+          
+          if git diff --staged --quiet; then
+            echo "No timezone changes detected. Working tree clean."
+          else
+            git commit -m "chore(auto): update global timezones and execution logs [skip ci]"
+            git push
+          fi
