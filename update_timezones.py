@@ -1,156 +1,139 @@
+import datetime
 import json
 import os
 import sys
-from datetime import datetime, timezone
-from zoneinfo import ZoneInfo
+from pathlib import Path
 import pytz
 
-README_FILE = "README.md"
-JSON_OUTPUT_FILE = "timezones.json"
-LAST_RUN_FILE = "last_run.json"
-
-START_MARKER = "<!-- TIMEZONE_TABLE_START -->"
-END_MARKER = "<!-- TIMEZONE_TABLE_END -->"
+DATA_FILE = Path("timezones.json")
+README_FILE = Path("README.md")
+STATUS_FILE = Path("last_run.json")
 
 
-def record_run_status(status: str, error_msg: str = None, total_entries: int = 0) -> None:
-    """Records the execution status and timestamp to last_run.json."""
+def update_last_run(status: str, error_message: str = None) -> None:
+    """Records execution timestamp, status, and error details if any."""
+    now = datetime.datetime.now(datetime.timezone.utc)
     payload = {
-        "timestamp_utc": datetime.now(timezone.utc).isoformat(),
-        "epoch": int(datetime.now(timezone.utc).timestamp()),
+        "last_run_utc": now.isoformat(),
+        "timestamp_epoch": int(now.timestamp()),
         "status": status,
-        "records_processed": total_entries,
-        "error_message": error_msg
+        "error_message": error_message,
     }
-    with open(LAST_RUN_FILE, "w", encoding="utf-8") as f:
+    with open(STATUS_FILE, "w", encoding="utf-8") as f:
         json.dump(payload, f, indent=2, ensure_ascii=False)
 
 
-def format_gmt_offset(total_seconds: float) -> str:
-    """Converts offset in seconds to standard GMT representation (e.g. GMT+03:00)."""
+def get_current_offset_data(tz_name: str, now_utc: datetime.datetime) -> dict:
+    """Calculates active GMT offset and Daylight Saving Time (DST) status for a zone."""
+    tz = pytz.timezone(tz_name)
+    localized_time = now_utc.astimezone(tz)
+
+    offset = localized_time.utcoffset()
+    total_seconds = int(offset.total_seconds()) if offset else 0
+
+    abs_seconds = abs(total_seconds)
+    hours = abs_seconds // 3600
+    minutes = (abs_seconds % 3600) // 60
     sign = "+" if total_seconds >= 0 else "-"
-    abs_seconds = int(abs(total_seconds))
-    hours, remainder = divmod(abs_seconds, 3600)
-    minutes = remainder // 60
-    return f"GMT{sign}{hours:02d}:{minutes:02d}"
+    formatted_offset = f"UTC{sign}{hours:02d}:{minutes:02d}"
+
+    dst_offset = localized_time.dst()
+    is_dst_active = bool(dst_offset and dst_offset.total_seconds() != 0)
+
+    return {
+        "timezone": tz_name,
+        "gmt_offset": formatted_offset,
+        "offset_seconds": total_seconds,
+        "is_dst": is_dst_active,
+    }
 
 
-def fetch_country_timezones():
-    """Extracts current GMT offsets and DST states for all countries."""
-    now_utc = datetime.now(timezone.utc)
-    results = []
+def collect_world_timezones() -> list:
+    """Iterates over ISO country codes and resolves current timezone information."""
+    now_utc = datetime.datetime.now(datetime.timezone.utc)
+    dataset = []
 
-    # Sort countries alphabetically by name
-    sorted_country_items = sorted(
-        pytz.country_names.items(), key=lambda x: x[1]
-    )
-
-    for country_code, country_name in sorted_country_items:
-        tz_list = pytz.country_timezones.get(country_code, [])
-        if not tz_list:
+    for code, country_name in pytz.country_names.items():
+        zone_names = pytz.country_timezones.get(code, [])
+        if not zone_names:
             continue
 
-        zone_details = []
-        for tz_name in tz_list:
+        resolved_zones = []
+        for zone in zone_names:
             try:
-                tz = ZoneInfo(tz_name)
-                localized_time = now_utc.astimezone(tz)
-                offset = localized_time.utcoffset()
-                dst_offset = localized_time.dst()
-
-                total_seconds = offset.total_seconds() if offset else 0
-                is_dst = bool(dst_offset and dst_offset.total_seconds() != 0)
-
-                zone_details.append({
-                    "timezone": tz_name,
-                    "gmt_offset": format_gmt_offset(total_seconds),
-                    "raw_offset_seconds": int(total_seconds),
-                    "is_dst": is_dst,
-                    "abbreviation": localized_time.strftime("%Z"),
-                    "current_local_time": localized_time.strftime("%Y-%m-%d %H:%M:%S")
-                })
-            except Exception as e:
-                print(f"Warning: Failed to parse timezone {tz_name} ({country_name}): {e}")
+                tz_data = get_current_offset_data(zone, now_utc)
+                resolved_zones.append(tz_data)
+            except Exception:
                 continue
 
-        if zone_details:
-            results.append({
-                "country_name": country_name,
-                "country_code": country_code,
-                "zones": zone_details
-            })
-
-    return results
-
-
-def update_readme(data) -> None:
-    """Generates a clean Markdown table and replaces markers in README.md."""
-    lines = [
-        "| Country | ISO | Primary / Available Timezones | Current Offset | DST Active | Local Time |",
-        "| :--- | :---: | :--- | :---: | :---: | :--- |"
-    ]
-
-    for item in data:
-        country = item["country_name"]
-        code = item["country_code"]
-        for idx, zone in enumerate(item["zones"]):
-            # Display country name only on the first row if country has multiple timezones
-            display_country = country if idx == 0 else ""
-            display_code = f"`{code}`" if idx == 0 else ""
-            dst_badge = "Yes" if zone["is_dst"] else "No"
-
-            lines.append(
-                f"| {display_country} | {display_code} | `{zone['timezone']}` | **{zone['gmt_offset']}** | {dst_badge} | `{zone['current_local_time']}` |"
+        if resolved_zones:
+            dataset.append(
+                {
+                    "country_code": code,
+                    "country_name": country_name,
+                    "zones": resolved_zones,
+                }
             )
 
-    table_markdown = "\n".join(lines)
-    replacement_content = f"{START_MARKER}\n\n{table_markdown}\n\n{END_MARKER}"
+    dataset.sort(key=lambda item: item["country_name"])
+    return dataset
 
-    if not os.path.exists(README_FILE):
-        content = f"# Global Timezones & Live GMT Registry\n\n{replacement_content}\n"
-    else:
-        with open(README_FILE, "r", encoding="utf-8") as f:
-            content = f.read()
 
-        if START_MARKER in content and END_MARKER in content:
-            parts = content.split(START_MARKER)
-            post_part = parts[1].split(END_MARKER)[1]
-            content = parts[0] + replacement_content + post_part
-        else:
-            content += f"\n\n## Current Global Offsets\n\n{replacement_content}\n"
+def generate_markdown(dataset: list, execution_time: str) -> str:
+    """Builds a scannable, modern Markdown table."""
+    total_countries = len(dataset)
+    total_zones = sum(len(c["zones"]) for c in dataset)
 
-    with open(README_FILE, "w", encoding="utf-8") as f:
-        f.write(content)
+    md = [
+        "# Global Country Timezone & GMT Offsets",
+        "",
+        "> Automated weekly tracker capturing real-time UTC/GMT offsets and active Daylight Saving Time (DST) changes.",
+        "",
+        f"- **Last Updated:** `{execution_time} (UTC)`",
+        f"- **Tracked Countries:** `{total_countries}`",
+        f"- **Total Timezones:** `{total_zones}`",
+        "- **Data Export:** [`timezones.json`](./timezones.json) | **Run Telemetry:** [`last_run.json`](./last_run.json)",
+        "",
+        "| Country | Alpha-2 | Timezone Identifier | Current Offset | DST Active |",
+        "| :--- | :---: | :--- | :---: | :---: |",
+    ]
+
+    for country in dataset:
+        c_name = country["country_name"]
+        c_code = country["country_code"]
+        for idx, z in enumerate(country["zones"]):
+            dst_flag = "Yes" if z["is_dst"] else "No"
+            country_display = c_name if idx == 0 else ""
+            code_display = f"`{c_code}`" if idx == 0 else ""
+            md.append(
+                f"| {country_display} | {code_display} | `{z['timezone']}` | `{z['gmt_offset']}` | {dst_flag} |"
+            )
+
+    md.append("")
+    return "\n".join(md)
 
 
 def main():
     try:
-        print("Fetching worldwide timezones and calculating DST offsets...")
-        data = fetch_country_timezones()
+        data = collect_world_timezones()
 
-        # 1. Write timezones.json
-        with open(JSON_OUTPUT_FILE, "w", encoding="utf-8") as f:
-            json.dump({
-                "metadata": {
-                    "updated_at_utc": datetime.now(timezone.utc).isoformat(),
-                    "total_countries": len(data)
-                },
-                "countries": data
-            }, f, indent=2, ensure_ascii=False)
-        print(f"Successfully generated {JSON_OUTPUT_FILE}")
+        with open(DATA_FILE, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
 
-        # 2. Update README.md
-        update_readme(data)
-        print(f"Successfully updated {README_FILE}")
+        now_str = datetime.datetime.now(datetime.timezone.utc).strftime(
+            "%Y-%m-%d %H:%M:%S"
+        )
+        readme_content = generate_markdown(data, now_str)
 
-        # 3. Write success record to last_run.json
-        record_run_status(status="success", total_entries=len(data))
-        print("Execution finished successfully.")
+        with open(README_FILE, "w", encoding="utf-8") as f:
+            f.write(readme_content)
+
+        update_last_run(status="success")
+        print("Timezone sync completed successfully.")
 
     except Exception as exc:
-        error_str = str(exc)
-        print(f"Fatal error occurred: {error_str}", file=sys.stderr)
-        record_run_status(status="failed", error_msg=error_str)
+        update_last_run(status="failed", error_message=str(exc))
+        print(f"Error during execution: {exc}", file=sys.stderr)
         sys.exit(1)
 
 
