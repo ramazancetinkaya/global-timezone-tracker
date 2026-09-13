@@ -917,9 +917,9 @@
     "zones": [
       {
         "timezone": "America/Santiago",
-        "gmt_offset": "UTC-04:00",
-        "offset_seconds": -14400,
-        "is_dst": false
+        "gmt_offset": "UTC-03:00",
+        "offset_seconds": -10800,
+        "is_dst": true
       },
       {
         "timezone": "America/Coyhaique",
@@ -935,9 +935,9 @@
       },
       {
         "timezone": "Pacific/Easter",
-        "gmt_offset": "UTC-06:00",
-        "offset_seconds": -21600,
-        "is_dst": false
+        "gmt_offset": "UTC-05:00",
+        "offset_seconds": -18000,
+        "is_dst": true
       }
     ]
   },

@@ -6,7 +6,7 @@ An automated reference tracking real-time UTC/GMT offsets, Daylight Saving Time 
 
 | Metric | Specification |
 | :--- | :--- |
-| Last Synchronization | 2026-09-06 03:30:28 UTC |
+| Last Synchronization | 2026-09-13 03:47:37 UTC |
 | Countries Tracked | 247 |
 | Timezones Tracked | 418 |
 | Update Cadence | Weekly (Every Sunday at 00:00 UTC) |
@@ -148,10 +148,10 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Cayman Islands | `KY` | `America/Cayman` | `UTC-05:00` | No |
 | Central African Rep. | `CF` | `Africa/Bangui` | `UTC+01:00` | No |
 | Chad | `TD` | `Africa/Ndjamena` | `UTC+01:00` | No |
-| Chile | `CL` | `America/Santiago` | `UTC-04:00` | No |
+| Chile | `CL` | `America/Santiago` | `UTC-03:00` | Yes |
 |  |  | `America/Coyhaique` | `UTC-03:00` | No |
 |  |  | `America/Punta_Arenas` | `UTC-03:00` | No |
-|  |  | `Pacific/Easter` | `UTC-06:00` | No |
+|  |  | `Pacific/Easter` | `UTC-05:00` | Yes |
 | China | `CN` | `Asia/Shanghai` | `UTC+08:00` | No |
 |  |  | `Asia/Urumqi` | `UTC+06:00` | No |
 | Christmas Island | `CX` | `Indian/Christmas` | `UTC+07:00` | No |
