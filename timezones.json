@@ -2417,8 +2417,8 @@
     "zones": [
       {
         "timezone": "Africa/Casablanca",
-        "gmt_offset": "UTC+01:00",
-        "offset_seconds": 3600,
+        "gmt_offset": "UTC+00:00",
+        "offset_seconds": 0,
         "is_dst": false
       }
     ]
@@ -3935,8 +3935,8 @@
     "zones": [
       {
         "timezone": "Africa/El_Aaiun",
-        "gmt_offset": "UTC+01:00",
-        "offset_seconds": 3600,
+        "gmt_offset": "UTC+00:00",
+        "offset_seconds": 0,
         "is_dst": false
       }
     ]

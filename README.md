@@ -6,7 +6,7 @@ An automated reference tracking real-time UTC/GMT offsets, Daylight Saving Time 
 
 | Metric | Specification |
 | :--- | :--- |
-| Last Synchronization | 2026-09-13 03:47:37 UTC |
+| Last Synchronization | 2026-09-20 03:57:13 UTC |
 | Countries Tracked | 247 |
 | Timezones Tracked | 418 |
 | Update Cadence | Weekly (Every Sunday at 00:00 UTC) |
@@ -293,7 +293,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 |  |  | `Asia/Hovd` | `UTC+07:00` | No |
 | Montenegro | `ME` | `Europe/Podgorica` | `UTC+02:00` | Yes |
 | Montserrat | `MS` | `America/Montserrat` | `UTC-04:00` | No |
-| Morocco | `MA` | `Africa/Casablanca` | `UTC+01:00` | No |
+| Morocco | `MA` | `Africa/Casablanca` | `UTC+00:00` | No |
 | Mozambique | `MZ` | `Africa/Maputo` | `UTC+02:00` | No |
 | Myanmar (Burma) | `MM` | `Asia/Yangon` | `UTC+06:30` | No |
 | Namibia | `NA` | `Africa/Windhoek` | `UTC+02:00` | No |
@@ -451,7 +451,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Virgin Islands (UK) | `VG` | `America/Tortola` | `UTC-04:00` | No |
 | Virgin Islands (US) | `VI` | `America/St_Thomas` | `UTC-04:00` | No |
 | Wallis & Futuna | `WF` | `Pacific/Wallis` | `UTC+12:00` | No |
-| Western Sahara | `EH` | `Africa/El_Aaiun` | `UTC+01:00` | No |
+| Western Sahara | `EH` | `Africa/El_Aaiun` | `UTC+00:00` | No |
 | Yemen | `YE` | `Asia/Aden` | `UTC+03:00` | No |
 | Zambia | `ZM` | `Africa/Lusaka` | `UTC+02:00` | No |
 | Zimbabwe | `ZW` | `Africa/Harare` | `UTC+02:00` | No |
