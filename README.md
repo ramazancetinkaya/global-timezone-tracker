@@ -6,7 +6,7 @@ An automated reference tracking real-time UTC/GMT offsets, Daylight Saving Time 
 
 | Metric | Specification |
 | :--- | :--- |
-| Last Synchronization | 2026-09-20 03:57:13 UTC |
+| Last Synchronization | 2026-09-27 04:16:16 UTC |
 | Countries Tracked | 247 |
 | Timezones Tracked | 418 |
 | Update Cadence | Weekly (Every Sunday at 00:00 UTC) |
@@ -44,7 +44,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Andorra | `AD` | `Europe/Andorra` | `UTC+02:00` | Yes |
 | Angola | `AO` | `Africa/Luanda` | `UTC+01:00` | No |
 | Anguilla | `AI` | `America/Anguilla` | `UTC-04:00` | No |
-| Antarctica | `AQ` | `Antarctica/McMurdo` | `UTC+12:00` | No |
+| Antarctica | `AQ` | `Antarctica/McMurdo` | `UTC+13:00` | Yes |
 |  |  | `Antarctica/Casey` | `UTC+08:00` | No |
 |  |  | `Antarctica/Davis` | `UTC+07:00` | No |
 |  |  | `Antarctica/DumontDUrville` | `UTC+10:00` | No |
@@ -301,8 +301,8 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Nepal | `NP` | `Asia/Kathmandu` | `UTC+05:45` | No |
 | Netherlands | `NL` | `Europe/Amsterdam` | `UTC+02:00` | Yes |
 | New Caledonia | `NC` | `Pacific/Noumea` | `UTC+11:00` | No |
-| New Zealand | `NZ` | `Pacific/Auckland` | `UTC+12:00` | No |
-|  |  | `Pacific/Chatham` | `UTC+12:45` | No |
+| New Zealand | `NZ` | `Pacific/Auckland` | `UTC+13:00` | Yes |
+|  |  | `Pacific/Chatham` | `UTC+13:45` | Yes |
 | Nicaragua | `NI` | `America/Managua` | `UTC-06:00` | No |
 | Niger | `NE` | `Africa/Niamey` | `UTC+01:00` | No |
 | Nigeria | `NG` | `Africa/Lagos` | `UTC+01:00` | No |
