@@ -6,7 +6,7 @@ An automated reference tracking real-time UTC/GMT offsets, Daylight Saving Time 
 
 | Metric | Specification |
 | :--- | :--- |
-| Last Synchronization | 2026-09-27 04:16:16 UTC |
+| Last Synchronization | 2026-10-04 04:51:10 UTC |
 | Countries Tracked | 247 |
 | Timezones Tracked | 418 |
 | Update Cadence | Weekly (Every Sunday at 00:00 UTC) |
@@ -69,15 +69,15 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 |  |  | `America/Argentina/Ushuaia` | `UTC-03:00` | No |
 | Armenia | `AM` | `Asia/Yerevan` | `UTC+04:00` | No |
 | Aruba | `AW` | `America/Aruba` | `UTC-04:00` | No |
-| Australia | `AU` | `Australia/Lord_Howe` | `UTC+10:30` | No |
-|  |  | `Antarctica/Macquarie` | `UTC+10:00` | No |
-|  |  | `Australia/Hobart` | `UTC+10:00` | No |
-|  |  | `Australia/Melbourne` | `UTC+10:00` | No |
-|  |  | `Australia/Sydney` | `UTC+10:00` | No |
-|  |  | `Australia/Broken_Hill` | `UTC+09:30` | No |
+| Australia | `AU` | `Australia/Lord_Howe` | `UTC+11:00` | Yes |
+|  |  | `Antarctica/Macquarie` | `UTC+11:00` | Yes |
+|  |  | `Australia/Hobart` | `UTC+11:00` | Yes |
+|  |  | `Australia/Melbourne` | `UTC+11:00` | Yes |
+|  |  | `Australia/Sydney` | `UTC+11:00` | Yes |
+|  |  | `Australia/Broken_Hill` | `UTC+10:30` | Yes |
 |  |  | `Australia/Brisbane` | `UTC+10:00` | No |
 |  |  | `Australia/Lindeman` | `UTC+10:00` | No |
-|  |  | `Australia/Adelaide` | `UTC+09:30` | No |
+|  |  | `Australia/Adelaide` | `UTC+10:30` | Yes |
 |  |  | `Australia/Darwin` | `UTC+09:30` | No |
 |  |  | `Australia/Perth` | `UTC+08:00` | No |
 |  |  | `Australia/Eucla` | `UTC+08:45` | No |
@@ -307,7 +307,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Niger | `NE` | `Africa/Niamey` | `UTC+01:00` | No |
 | Nigeria | `NG` | `Africa/Lagos` | `UTC+01:00` | No |
 | Niue | `NU` | `Pacific/Niue` | `UTC-11:00` | No |
-| Norfolk Island | `NF` | `Pacific/Norfolk` | `UTC+11:00` | No |
+| Norfolk Island | `NF` | `Pacific/Norfolk` | `UTC+12:00` | Yes |
 | North Macedonia | `MK` | `Europe/Skopje` | `UTC+02:00` | Yes |
 | Northern Mariana Islands | `MP` | `Pacific/Saipan` | `UTC+10:00` | No |
 | Norway | `NO` | `Europe/Oslo` | `UTC+02:00` | Yes |

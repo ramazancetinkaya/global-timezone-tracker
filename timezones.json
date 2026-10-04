@@ -257,39 +257,39 @@
     "zones": [
       {
         "timezone": "Australia/Lord_Howe",
-        "gmt_offset": "UTC+10:30",
-        "offset_seconds": 37800,
-        "is_dst": false
+        "gmt_offset": "UTC+11:00",
+        "offset_seconds": 39600,
+        "is_dst": true
       },
       {
         "timezone": "Antarctica/Macquarie",
-        "gmt_offset": "UTC+10:00",
-        "offset_seconds": 36000,
-        "is_dst": false
+        "gmt_offset": "UTC+11:00",
+        "offset_seconds": 39600,
+        "is_dst": true
       },
       {
         "timezone": "Australia/Hobart",
-        "gmt_offset": "UTC+10:00",
-        "offset_seconds": 36000,
-        "is_dst": false
+        "gmt_offset": "UTC+11:00",
+        "offset_seconds": 39600,
+        "is_dst": true
       },
       {
         "timezone": "Australia/Melbourne",
-        "gmt_offset": "UTC+10:00",
-        "offset_seconds": 36000,
-        "is_dst": false
+        "gmt_offset": "UTC+11:00",
+        "offset_seconds": 39600,
+        "is_dst": true
       },
       {
         "timezone": "Australia/Sydney",
-        "gmt_offset": "UTC+10:00",
-        "offset_seconds": 36000,
-        "is_dst": false
+        "gmt_offset": "UTC+11:00",
+        "offset_seconds": 39600,
+        "is_dst": true
       },
       {
         "timezone": "Australia/Broken_Hill",
-        "gmt_offset": "UTC+09:30",
-        "offset_seconds": 34200,
-        "is_dst": false
+        "gmt_offset": "UTC+10:30",
+        "offset_seconds": 37800,
+        "is_dst": true
       },
       {
         "timezone": "Australia/Brisbane",
@@ -305,9 +305,9 @@
       },
       {
         "timezone": "Australia/Adelaide",
-        "gmt_offset": "UTC+09:30",
-        "offset_seconds": 34200,
-        "is_dst": false
+        "gmt_offset": "UTC+10:30",
+        "offset_seconds": 37800,
+        "is_dst": true
       },
       {
         "timezone": "Australia/Darwin",
@@ -2579,9 +2579,9 @@
     "zones": [
       {
         "timezone": "Pacific/Norfolk",
-        "gmt_offset": "UTC+11:00",
-        "offset_seconds": 39600,
-        "is_dst": false
+        "gmt_offset": "UTC+12:00",
+        "offset_seconds": 43200,
+        "is_dst": true
       }
     ]
   },
