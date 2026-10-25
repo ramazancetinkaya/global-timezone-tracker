@@ -17,9 +17,9 @@
     "zones": [
       {
         "timezone": "Europe/Tirane",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -41,9 +41,9 @@
     "zones": [
       {
         "timezone": "Europe/Andorra",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -125,9 +125,9 @@
       },
       {
         "timezone": "Antarctica/Troll",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+00:00",
+        "offset_seconds": 0,
+        "is_dst": false
       },
       {
         "timezone": "Antarctica/Vostok",
@@ -335,9 +335,9 @@
     "zones": [
       {
         "timezone": "Europe/Vienna",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -419,9 +419,9 @@
     "zones": [
       {
         "timezone": "Europe/Brussels",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -491,9 +491,9 @@
     "zones": [
       {
         "timezone": "Europe/Sarajevo",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -617,9 +617,9 @@
     "zones": [
       {
         "timezone": "Europe/London",
-        "gmt_offset": "UTC+01:00",
-        "offset_seconds": 3600,
-        "is_dst": true
+        "gmt_offset": "UTC+00:00",
+        "offset_seconds": 0,
+        "is_dst": false
       }
     ]
   },
@@ -653,9 +653,9 @@
     "zones": [
       {
         "timezone": "Europe/Sofia",
-        "gmt_offset": "UTC+03:00",
-        "offset_seconds": 10800,
-        "is_dst": true
+        "gmt_offset": "UTC+02:00",
+        "offset_seconds": 7200,
+        "is_dst": false
       }
     ]
   },
@@ -1067,9 +1067,9 @@
     "zones": [
       {
         "timezone": "Europe/Zagreb",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -1103,15 +1103,15 @@
     "zones": [
       {
         "timezone": "Asia/Nicosia",
-        "gmt_offset": "UTC+03:00",
-        "offset_seconds": 10800,
-        "is_dst": true
+        "gmt_offset": "UTC+02:00",
+        "offset_seconds": 7200,
+        "is_dst": false
       },
       {
         "timezone": "Asia/Famagusta",
-        "gmt_offset": "UTC+03:00",
-        "offset_seconds": 10800,
-        "is_dst": true
+        "gmt_offset": "UTC+02:00",
+        "offset_seconds": 7200,
+        "is_dst": false
       }
     ]
   },
@@ -1121,9 +1121,9 @@
     "zones": [
       {
         "timezone": "Europe/Prague",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -1145,9 +1145,9 @@
     "zones": [
       {
         "timezone": "Europe/Copenhagen",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -1271,9 +1271,9 @@
     "zones": [
       {
         "timezone": "Europe/Tallinn",
-        "gmt_offset": "UTC+03:00",
-        "offset_seconds": 10800,
-        "is_dst": true
+        "gmt_offset": "UTC+02:00",
+        "offset_seconds": 7200,
+        "is_dst": false
       }
     ]
   },
@@ -1319,9 +1319,9 @@
     "zones": [
       {
         "timezone": "Atlantic/Faroe",
-        "gmt_offset": "UTC+01:00",
-        "offset_seconds": 3600,
-        "is_dst": true
+        "gmt_offset": "UTC+00:00",
+        "offset_seconds": 0,
+        "is_dst": false
       }
     ]
   },
@@ -1343,9 +1343,9 @@
     "zones": [
       {
         "timezone": "Europe/Helsinki",
-        "gmt_offset": "UTC+03:00",
-        "offset_seconds": 10800,
-        "is_dst": true
+        "gmt_offset": "UTC+02:00",
+        "offset_seconds": 7200,
+        "is_dst": false
       }
     ]
   },
@@ -1355,9 +1355,9 @@
     "zones": [
       {
         "timezone": "Europe/Paris",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -1451,15 +1451,15 @@
     "zones": [
       {
         "timezone": "Europe/Berlin",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       },
       {
         "timezone": "Europe/Busingen",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -1481,9 +1481,9 @@
     "zones": [
       {
         "timezone": "Europe/Gibraltar",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -1493,9 +1493,9 @@
     "zones": [
       {
         "timezone": "Europe/Athens",
-        "gmt_offset": "UTC+03:00",
-        "offset_seconds": 10800,
-        "is_dst": true
+        "gmt_offset": "UTC+02:00",
+        "offset_seconds": 7200,
+        "is_dst": false
       }
     ]
   },
@@ -1505,9 +1505,9 @@
     "zones": [
       {
         "timezone": "America/Nuuk",
-        "gmt_offset": "UTC-01:00",
-        "offset_seconds": -3600,
-        "is_dst": true
+        "gmt_offset": "UTC-02:00",
+        "offset_seconds": -7200,
+        "is_dst": false
       },
       {
         "timezone": "America/Danmarkshavn",
@@ -1517,9 +1517,9 @@
       },
       {
         "timezone": "America/Scoresbysund",
-        "gmt_offset": "UTC-01:00",
-        "offset_seconds": -3600,
-        "is_dst": true
+        "gmt_offset": "UTC-02:00",
+        "offset_seconds": -7200,
+        "is_dst": false
       },
       {
         "timezone": "America/Thule",
@@ -1583,9 +1583,9 @@
     "zones": [
       {
         "timezone": "Europe/Guernsey",
-        "gmt_offset": "UTC+01:00",
-        "offset_seconds": 3600,
-        "is_dst": true
+        "gmt_offset": "UTC+00:00",
+        "offset_seconds": 0,
+        "is_dst": false
       }
     ]
   },
@@ -1667,9 +1667,9 @@
     "zones": [
       {
         "timezone": "Europe/Budapest",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -1757,9 +1757,9 @@
     "zones": [
       {
         "timezone": "Europe/Dublin",
-        "gmt_offset": "UTC+01:00",
-        "offset_seconds": 3600,
-        "is_dst": false
+        "gmt_offset": "UTC+00:00",
+        "offset_seconds": 0,
+        "is_dst": true
       }
     ]
   },
@@ -1769,9 +1769,9 @@
     "zones": [
       {
         "timezone": "Europe/Isle_of_Man",
-        "gmt_offset": "UTC+01:00",
-        "offset_seconds": 3600,
-        "is_dst": true
+        "gmt_offset": "UTC+00:00",
+        "offset_seconds": 0,
+        "is_dst": false
       }
     ]
   },
@@ -1781,9 +1781,9 @@
     "zones": [
       {
         "timezone": "Asia/Jerusalem",
-        "gmt_offset": "UTC+03:00",
-        "offset_seconds": 10800,
-        "is_dst": true
+        "gmt_offset": "UTC+02:00",
+        "offset_seconds": 7200,
+        "is_dst": false
       }
     ]
   },
@@ -1793,9 +1793,9 @@
     "zones": [
       {
         "timezone": "Europe/Rome",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -1829,9 +1829,9 @@
     "zones": [
       {
         "timezone": "Europe/Jersey",
-        "gmt_offset": "UTC+01:00",
-        "offset_seconds": 3600,
-        "is_dst": true
+        "gmt_offset": "UTC+00:00",
+        "offset_seconds": 0,
+        "is_dst": false
       }
     ]
   },
@@ -1997,9 +1997,9 @@
     "zones": [
       {
         "timezone": "Europe/Riga",
-        "gmt_offset": "UTC+03:00",
-        "offset_seconds": 10800,
-        "is_dst": true
+        "gmt_offset": "UTC+02:00",
+        "offset_seconds": 7200,
+        "is_dst": false
       }
     ]
   },
@@ -2009,9 +2009,9 @@
     "zones": [
       {
         "timezone": "Asia/Beirut",
-        "gmt_offset": "UTC+03:00",
-        "offset_seconds": 10800,
-        "is_dst": true
+        "gmt_offset": "UTC+02:00",
+        "offset_seconds": 7200,
+        "is_dst": false
       }
     ]
   },
@@ -2057,9 +2057,9 @@
     "zones": [
       {
         "timezone": "Europe/Vaduz",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -2069,9 +2069,9 @@
     "zones": [
       {
         "timezone": "Europe/Vilnius",
-        "gmt_offset": "UTC+03:00",
-        "offset_seconds": 10800,
-        "is_dst": true
+        "gmt_offset": "UTC+02:00",
+        "offset_seconds": 7200,
+        "is_dst": false
       }
     ]
   },
@@ -2081,9 +2081,9 @@
     "zones": [
       {
         "timezone": "Europe/Luxembourg",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -2171,9 +2171,9 @@
     "zones": [
       {
         "timezone": "Europe/Malta",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -2351,9 +2351,9 @@
     "zones": [
       {
         "timezone": "Europe/Chisinau",
-        "gmt_offset": "UTC+03:00",
-        "offset_seconds": 10800,
-        "is_dst": true
+        "gmt_offset": "UTC+02:00",
+        "offset_seconds": 7200,
+        "is_dst": false
       }
     ]
   },
@@ -2363,9 +2363,9 @@
     "zones": [
       {
         "timezone": "Europe/Monaco",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -2393,9 +2393,9 @@
     "zones": [
       {
         "timezone": "Europe/Podgorica",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -2489,9 +2489,9 @@
     "zones": [
       {
         "timezone": "Europe/Amsterdam",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -2591,9 +2591,9 @@
     "zones": [
       {
         "timezone": "Europe/Skopje",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -2615,9 +2615,9 @@
     "zones": [
       {
         "timezone": "Europe/Oslo",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -2663,15 +2663,15 @@
     "zones": [
       {
         "timezone": "Asia/Gaza",
-        "gmt_offset": "UTC+03:00",
-        "offset_seconds": 10800,
-        "is_dst": true
+        "gmt_offset": "UTC+02:00",
+        "offset_seconds": 7200,
+        "is_dst": false
       },
       {
         "timezone": "Asia/Hebron",
-        "gmt_offset": "UTC+03:00",
-        "offset_seconds": 10800,
-        "is_dst": true
+        "gmt_offset": "UTC+02:00",
+        "offset_seconds": 7200,
+        "is_dst": false
       }
     ]
   },
@@ -2759,9 +2759,9 @@
     "zones": [
       {
         "timezone": "Europe/Warsaw",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -2771,21 +2771,21 @@
     "zones": [
       {
         "timezone": "Europe/Lisbon",
-        "gmt_offset": "UTC+01:00",
-        "offset_seconds": 3600,
-        "is_dst": true
+        "gmt_offset": "UTC+00:00",
+        "offset_seconds": 0,
+        "is_dst": false
       },
       {
         "timezone": "Atlantic/Madeira",
-        "gmt_offset": "UTC+01:00",
-        "offset_seconds": 3600,
-        "is_dst": true
+        "gmt_offset": "UTC+00:00",
+        "offset_seconds": 0,
+        "is_dst": false
       },
       {
         "timezone": "Atlantic/Azores",
-        "gmt_offset": "UTC+00:00",
-        "offset_seconds": 0,
-        "is_dst": true
+        "gmt_offset": "UTC-01:00",
+        "offset_seconds": -3600,
+        "is_dst": false
       }
     ]
   },
@@ -2819,9 +2819,9 @@
     "zones": [
       {
         "timezone": "Europe/Bucharest",
-        "gmt_offset": "UTC+03:00",
-        "offset_seconds": 10800,
-        "is_dst": true
+        "gmt_offset": "UTC+02:00",
+        "offset_seconds": 7200,
+        "is_dst": false
       }
     ]
   },
@@ -3041,9 +3041,9 @@
     "zones": [
       {
         "timezone": "Europe/San_Marino",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -3089,9 +3089,9 @@
     "zones": [
       {
         "timezone": "Europe/Belgrade",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -3137,9 +3137,9 @@
     "zones": [
       {
         "timezone": "Europe/Bratislava",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -3149,9 +3149,9 @@
     "zones": [
       {
         "timezone": "Europe/Ljubljana",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -3221,21 +3221,21 @@
     "zones": [
       {
         "timezone": "Europe/Madrid",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       },
       {
         "timezone": "Africa/Ceuta",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       },
       {
         "timezone": "Atlantic/Canary",
-        "gmt_offset": "UTC+01:00",
-        "offset_seconds": 3600,
-        "is_dst": true
+        "gmt_offset": "UTC+00:00",
+        "offset_seconds": 0,
+        "is_dst": false
       }
     ]
   },
@@ -3377,9 +3377,9 @@
     "zones": [
       {
         "timezone": "Arctic/Longyearbyen",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -3389,9 +3389,9 @@
     "zones": [
       {
         "timezone": "Europe/Stockholm",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -3401,9 +3401,9 @@
     "zones": [
       {
         "timezone": "Europe/Zurich",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -3617,9 +3617,9 @@
       },
       {
         "timezone": "Europe/Kyiv",
-        "gmt_offset": "UTC+03:00",
-        "offset_seconds": 10800,
-        "is_dst": true
+        "gmt_offset": "UTC+02:00",
+        "offset_seconds": 7200,
+        "is_dst": false
       }
     ]
   },
@@ -3863,9 +3863,9 @@
     "zones": [
       {
         "timezone": "Europe/Vatican",
-        "gmt_offset": "UTC+02:00",
-        "offset_seconds": 7200,
-        "is_dst": true
+        "gmt_offset": "UTC+01:00",
+        "offset_seconds": 3600,
+        "is_dst": false
       }
     ]
   },
@@ -3983,9 +3983,9 @@
     "zones": [
       {
         "timezone": "Europe/Mariehamn",
-        "gmt_offset": "UTC+03:00",
-        "offset_seconds": 10800,
-        "is_dst": true
+        "gmt_offset": "UTC+02:00",
+        "offset_seconds": 7200,
+        "is_dst": false
       }
     ]
   }

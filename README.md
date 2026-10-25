@@ -6,7 +6,7 @@ An automated reference tracking real-time UTC/GMT offsets, Daylight Saving Time 
 
 | Metric | Specification |
 | :--- | :--- |
-| Last Synchronization | 2026-10-18 03:34:41 UTC |
+| Last Synchronization | 2026-10-25 03:42:37 UTC |
 | Countries Tracked | 247 |
 | Timezones Tracked | 418 |
 | Update Cadence | Weekly (Every Sunday at 00:00 UTC) |
@@ -39,9 +39,9 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Country | ISO Code | Timezone Identifier | UTC Offset | DST Active |
 | :--- | :---: | :--- | :---: | :---: |
 | Afghanistan | `AF` | `Asia/Kabul` | `UTC+04:30` | No |
-| Albania | `AL` | `Europe/Tirane` | `UTC+02:00` | Yes |
+| Albania | `AL` | `Europe/Tirane` | `UTC+01:00` | No |
 | Algeria | `DZ` | `Africa/Algiers` | `UTC+01:00` | No |
-| Andorra | `AD` | `Europe/Andorra` | `UTC+02:00` | Yes |
+| Andorra | `AD` | `Europe/Andorra` | `UTC+01:00` | No |
 | Angola | `AO` | `Africa/Luanda` | `UTC+01:00` | No |
 | Anguilla | `AI` | `America/Anguilla` | `UTC-04:00` | No |
 | Antarctica | `AQ` | `Antarctica/McMurdo` | `UTC+13:00` | Yes |
@@ -52,7 +52,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 |  |  | `Antarctica/Palmer` | `UTC-03:00` | No |
 |  |  | `Antarctica/Rothera` | `UTC-03:00` | No |
 |  |  | `Antarctica/Syowa` | `UTC+03:00` | No |
-|  |  | `Antarctica/Troll` | `UTC+02:00` | Yes |
+|  |  | `Antarctica/Troll` | `UTC+00:00` | No |
 |  |  | `Antarctica/Vostok` | `UTC+05:00` | No |
 | Antigua & Barbuda | `AG` | `America/Antigua` | `UTC-04:00` | No |
 | Argentina | `AR` | `America/Argentina/Buenos_Aires` | `UTC-03:00` | No |
@@ -81,20 +81,20 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 |  |  | `Australia/Darwin` | `UTC+09:30` | No |
 |  |  | `Australia/Perth` | `UTC+08:00` | No |
 |  |  | `Australia/Eucla` | `UTC+08:45` | No |
-| Austria | `AT` | `Europe/Vienna` | `UTC+02:00` | Yes |
+| Austria | `AT` | `Europe/Vienna` | `UTC+01:00` | No |
 | Azerbaijan | `AZ` | `Asia/Baku` | `UTC+04:00` | No |
 | Bahamas | `BS` | `America/Nassau` | `UTC-04:00` | Yes |
 | Bahrain | `BH` | `Asia/Bahrain` | `UTC+03:00` | No |
 | Bangladesh | `BD` | `Asia/Dhaka` | `UTC+06:00` | No |
 | Barbados | `BB` | `America/Barbados` | `UTC-04:00` | No |
 | Belarus | `BY` | `Europe/Minsk` | `UTC+03:00` | No |
-| Belgium | `BE` | `Europe/Brussels` | `UTC+02:00` | Yes |
+| Belgium | `BE` | `Europe/Brussels` | `UTC+01:00` | No |
 | Belize | `BZ` | `America/Belize` | `UTC-06:00` | No |
 | Benin | `BJ` | `Africa/Porto-Novo` | `UTC+01:00` | No |
 | Bermuda | `BM` | `Atlantic/Bermuda` | `UTC-03:00` | Yes |
 | Bhutan | `BT` | `Asia/Thimphu` | `UTC+06:00` | No |
 | Bolivia | `BO` | `America/La_Paz` | `UTC-04:00` | No |
-| Bosnia & Herzegovina | `BA` | `Europe/Sarajevo` | `UTC+02:00` | Yes |
+| Bosnia & Herzegovina | `BA` | `Europe/Sarajevo` | `UTC+01:00` | No |
 | Botswana | `BW` | `Africa/Gaborone` | `UTC+02:00` | No |
 | Brazil | `BR` | `America/Noronha` | `UTC-02:00` | No |
 |  |  | `America/Belem` | `UTC-03:00` | No |
@@ -112,10 +112,10 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 |  |  | `America/Manaus` | `UTC-04:00` | No |
 |  |  | `America/Eirunepe` | `UTC-05:00` | No |
 |  |  | `America/Rio_Branco` | `UTC-05:00` | No |
-| Britain (UK) | `GB` | `Europe/London` | `UTC+01:00` | Yes |
+| Britain (UK) | `GB` | `Europe/London` | `UTC+00:00` | No |
 | British Indian Ocean Territory | `IO` | `Indian/Chagos` | `UTC+06:00` | No |
 | Brunei | `BN` | `Asia/Brunei` | `UTC+08:00` | No |
-| Bulgaria | `BG` | `Europe/Sofia` | `UTC+03:00` | Yes |
+| Bulgaria | `BG` | `Europe/Sofia` | `UTC+02:00` | No |
 | Burkina Faso | `BF` | `Africa/Ouagadougou` | `UTC+00:00` | No |
 | Burundi | `BI` | `Africa/Bujumbura` | `UTC+02:00` | No |
 | Cambodia | `KH` | `Asia/Phnom_Penh` | `UTC+07:00` | No |
@@ -163,14 +163,14 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Congo (Rep.) | `CG` | `Africa/Brazzaville` | `UTC+01:00` | No |
 | Cook Islands | `CK` | `Pacific/Rarotonga` | `UTC-10:00` | No |
 | Costa Rica | `CR` | `America/Costa_Rica` | `UTC-06:00` | No |
-| Croatia | `HR` | `Europe/Zagreb` | `UTC+02:00` | Yes |
+| Croatia | `HR` | `Europe/Zagreb` | `UTC+01:00` | No |
 | Cuba | `CU` | `America/Havana` | `UTC-04:00` | Yes |
 | Curaçao | `CW` | `America/Curacao` | `UTC-04:00` | No |
-| Cyprus | `CY` | `Asia/Nicosia` | `UTC+03:00` | Yes |
-|  |  | `Asia/Famagusta` | `UTC+03:00` | Yes |
-| Czech Republic | `CZ` | `Europe/Prague` | `UTC+02:00` | Yes |
+| Cyprus | `CY` | `Asia/Nicosia` | `UTC+02:00` | No |
+|  |  | `Asia/Famagusta` | `UTC+02:00` | No |
+| Czech Republic | `CZ` | `Europe/Prague` | `UTC+01:00` | No |
 | Côte d’Ivoire | `CI` | `Africa/Abidjan` | `UTC+00:00` | No |
-| Denmark | `DK` | `Europe/Copenhagen` | `UTC+02:00` | Yes |
+| Denmark | `DK` | `Europe/Copenhagen` | `UTC+01:00` | No |
 | Djibouti | `DJ` | `Africa/Djibouti` | `UTC+03:00` | No |
 | Dominica | `DM` | `America/Dominica` | `UTC-04:00` | No |
 | Dominican Republic | `DO` | `America/Santo_Domingo` | `UTC-04:00` | No |
@@ -181,14 +181,14 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | El Salvador | `SV` | `America/El_Salvador` | `UTC-06:00` | No |
 | Equatorial Guinea | `GQ` | `Africa/Malabo` | `UTC+01:00` | No |
 | Eritrea | `ER` | `Africa/Asmara` | `UTC+03:00` | No |
-| Estonia | `EE` | `Europe/Tallinn` | `UTC+03:00` | Yes |
+| Estonia | `EE` | `Europe/Tallinn` | `UTC+02:00` | No |
 | Eswatini (Swaziland) | `SZ` | `Africa/Mbabane` | `UTC+02:00` | No |
 | Ethiopia | `ET` | `Africa/Addis_Ababa` | `UTC+03:00` | No |
 | Falkland Islands | `FK` | `Atlantic/Stanley` | `UTC-03:00` | No |
-| Faroe Islands | `FO` | `Atlantic/Faroe` | `UTC+01:00` | Yes |
+| Faroe Islands | `FO` | `Atlantic/Faroe` | `UTC+00:00` | No |
 | Fiji | `FJ` | `Pacific/Fiji` | `UTC+12:00` | No |
-| Finland | `FI` | `Europe/Helsinki` | `UTC+03:00` | Yes |
-| France | `FR` | `Europe/Paris` | `UTC+02:00` | Yes |
+| Finland | `FI` | `Europe/Helsinki` | `UTC+02:00` | No |
+| France | `FR` | `Europe/Paris` | `UTC+01:00` | No |
 | French Guiana | `GF` | `America/Cayenne` | `UTC-03:00` | No |
 | French Polynesia | `PF` | `Pacific/Tahiti` | `UTC-10:00` | No |
 |  |  | `Pacific/Marquesas` | `UTC-09:30` | No |
@@ -197,27 +197,27 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Gabon | `GA` | `Africa/Libreville` | `UTC+01:00` | No |
 | Gambia | `GM` | `Africa/Banjul` | `UTC+00:00` | No |
 | Georgia | `GE` | `Asia/Tbilisi` | `UTC+04:00` | No |
-| Germany | `DE` | `Europe/Berlin` | `UTC+02:00` | Yes |
-|  |  | `Europe/Busingen` | `UTC+02:00` | Yes |
+| Germany | `DE` | `Europe/Berlin` | `UTC+01:00` | No |
+|  |  | `Europe/Busingen` | `UTC+01:00` | No |
 | Ghana | `GH` | `Africa/Accra` | `UTC+00:00` | No |
-| Gibraltar | `GI` | `Europe/Gibraltar` | `UTC+02:00` | Yes |
-| Greece | `GR` | `Europe/Athens` | `UTC+03:00` | Yes |
-| Greenland | `GL` | `America/Nuuk` | `UTC-01:00` | Yes |
+| Gibraltar | `GI` | `Europe/Gibraltar` | `UTC+01:00` | No |
+| Greece | `GR` | `Europe/Athens` | `UTC+02:00` | No |
+| Greenland | `GL` | `America/Nuuk` | `UTC-02:00` | No |
 |  |  | `America/Danmarkshavn` | `UTC+00:00` | No |
-|  |  | `America/Scoresbysund` | `UTC-01:00` | Yes |
+|  |  | `America/Scoresbysund` | `UTC-02:00` | No |
 |  |  | `America/Thule` | `UTC-03:00` | Yes |
 | Grenada | `GD` | `America/Grenada` | `UTC-04:00` | No |
 | Guadeloupe | `GP` | `America/Guadeloupe` | `UTC-04:00` | No |
 | Guam | `GU` | `Pacific/Guam` | `UTC+10:00` | No |
 | Guatemala | `GT` | `America/Guatemala` | `UTC-06:00` | No |
-| Guernsey | `GG` | `Europe/Guernsey` | `UTC+01:00` | Yes |
+| Guernsey | `GG` | `Europe/Guernsey` | `UTC+00:00` | No |
 | Guinea | `GN` | `Africa/Conakry` | `UTC+00:00` | No |
 | Guinea-Bissau | `GW` | `Africa/Bissau` | `UTC+00:00` | No |
 | Guyana | `GY` | `America/Guyana` | `UTC-04:00` | No |
 | Haiti | `HT` | `America/Port-au-Prince` | `UTC-04:00` | Yes |
 | Honduras | `HN` | `America/Tegucigalpa` | `UTC-06:00` | No |
 | Hong Kong | `HK` | `Asia/Hong_Kong` | `UTC+08:00` | No |
-| Hungary | `HU` | `Europe/Budapest` | `UTC+02:00` | Yes |
+| Hungary | `HU` | `Europe/Budapest` | `UTC+01:00` | No |
 | Iceland | `IS` | `Atlantic/Reykjavik` | `UTC+00:00` | No |
 | India | `IN` | `Asia/Kolkata` | `UTC+05:30` | No |
 | Indonesia | `ID` | `Asia/Jakarta` | `UTC+07:00` | No |
@@ -226,13 +226,13 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 |  |  | `Asia/Jayapura` | `UTC+09:00` | No |
 | Iran | `IR` | `Asia/Tehran` | `UTC+03:30` | No |
 | Iraq | `IQ` | `Asia/Baghdad` | `UTC+03:00` | No |
-| Ireland | `IE` | `Europe/Dublin` | `UTC+01:00` | No |
-| Isle of Man | `IM` | `Europe/Isle_of_Man` | `UTC+01:00` | Yes |
-| Israel | `IL` | `Asia/Jerusalem` | `UTC+03:00` | Yes |
-| Italy | `IT` | `Europe/Rome` | `UTC+02:00` | Yes |
+| Ireland | `IE` | `Europe/Dublin` | `UTC+00:00` | Yes |
+| Isle of Man | `IM` | `Europe/Isle_of_Man` | `UTC+00:00` | No |
+| Israel | `IL` | `Asia/Jerusalem` | `UTC+02:00` | No |
+| Italy | `IT` | `Europe/Rome` | `UTC+01:00` | No |
 | Jamaica | `JM` | `America/Jamaica` | `UTC-05:00` | No |
 | Japan | `JP` | `Asia/Tokyo` | `UTC+09:00` | No |
-| Jersey | `JE` | `Europe/Jersey` | `UTC+01:00` | Yes |
+| Jersey | `JE` | `Europe/Jersey` | `UTC+00:00` | No |
 | Jordan | `JO` | `Asia/Amman` | `UTC+03:00` | No |
 | Kazakhstan | `KZ` | `Asia/Almaty` | `UTC+05:00` | No |
 |  |  | `Asia/Qyzylorda` | `UTC+05:00` | No |
@@ -250,14 +250,14 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Kuwait | `KW` | `Asia/Kuwait` | `UTC+03:00` | No |
 | Kyrgyzstan | `KG` | `Asia/Bishkek` | `UTC+06:00` | No |
 | Laos | `LA` | `Asia/Vientiane` | `UTC+07:00` | No |
-| Latvia | `LV` | `Europe/Riga` | `UTC+03:00` | Yes |
-| Lebanon | `LB` | `Asia/Beirut` | `UTC+03:00` | Yes |
+| Latvia | `LV` | `Europe/Riga` | `UTC+02:00` | No |
+| Lebanon | `LB` | `Asia/Beirut` | `UTC+02:00` | No |
 | Lesotho | `LS` | `Africa/Maseru` | `UTC+02:00` | No |
 | Liberia | `LR` | `Africa/Monrovia` | `UTC+00:00` | No |
 | Libya | `LY` | `Africa/Tripoli` | `UTC+02:00` | No |
-| Liechtenstein | `LI` | `Europe/Vaduz` | `UTC+02:00` | Yes |
-| Lithuania | `LT` | `Europe/Vilnius` | `UTC+03:00` | Yes |
-| Luxembourg | `LU` | `Europe/Luxembourg` | `UTC+02:00` | Yes |
+| Liechtenstein | `LI` | `Europe/Vaduz` | `UTC+01:00` | No |
+| Lithuania | `LT` | `Europe/Vilnius` | `UTC+02:00` | No |
+| Luxembourg | `LU` | `Europe/Luxembourg` | `UTC+01:00` | No |
 | Macau | `MO` | `Asia/Macau` | `UTC+08:00` | No |
 | Madagascar | `MG` | `Indian/Antananarivo` | `UTC+03:00` | No |
 | Malawi | `MW` | `Africa/Blantyre` | `UTC+02:00` | No |
@@ -265,7 +265,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 |  |  | `Asia/Kuching` | `UTC+08:00` | No |
 | Maldives | `MV` | `Indian/Maldives` | `UTC+05:00` | No |
 | Mali | `ML` | `Africa/Bamako` | `UTC+00:00` | No |
-| Malta | `MT` | `Europe/Malta` | `UTC+02:00` | Yes |
+| Malta | `MT` | `Europe/Malta` | `UTC+01:00` | No |
 | Marshall Islands | `MH` | `Pacific/Majuro` | `UTC+12:00` | No |
 |  |  | `Pacific/Kwajalein` | `UTC+12:00` | No |
 | Martinique | `MQ` | `America/Martinique` | `UTC-04:00` | No |
@@ -287,11 +287,11 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Micronesia | `FM` | `Pacific/Chuuk` | `UTC+10:00` | No |
 |  |  | `Pacific/Pohnpei` | `UTC+11:00` | No |
 |  |  | `Pacific/Kosrae` | `UTC+11:00` | No |
-| Moldova | `MD` | `Europe/Chisinau` | `UTC+03:00` | Yes |
-| Monaco | `MC` | `Europe/Monaco` | `UTC+02:00` | Yes |
+| Moldova | `MD` | `Europe/Chisinau` | `UTC+02:00` | No |
+| Monaco | `MC` | `Europe/Monaco` | `UTC+01:00` | No |
 | Mongolia | `MN` | `Asia/Ulaanbaatar` | `UTC+08:00` | No |
 |  |  | `Asia/Hovd` | `UTC+07:00` | No |
-| Montenegro | `ME` | `Europe/Podgorica` | `UTC+02:00` | Yes |
+| Montenegro | `ME` | `Europe/Podgorica` | `UTC+01:00` | No |
 | Montserrat | `MS` | `America/Montserrat` | `UTC-04:00` | No |
 | Morocco | `MA` | `Africa/Casablanca` | `UTC+00:00` | No |
 | Mozambique | `MZ` | `Africa/Maputo` | `UTC+02:00` | No |
@@ -299,7 +299,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Namibia | `NA` | `Africa/Windhoek` | `UTC+02:00` | No |
 | Nauru | `NR` | `Pacific/Nauru` | `UTC+12:00` | No |
 | Nepal | `NP` | `Asia/Kathmandu` | `UTC+05:45` | No |
-| Netherlands | `NL` | `Europe/Amsterdam` | `UTC+02:00` | Yes |
+| Netherlands | `NL` | `Europe/Amsterdam` | `UTC+01:00` | No |
 | New Caledonia | `NC` | `Pacific/Noumea` | `UTC+11:00` | No |
 | New Zealand | `NZ` | `Pacific/Auckland` | `UTC+13:00` | Yes |
 |  |  | `Pacific/Chatham` | `UTC+13:45` | Yes |
@@ -308,14 +308,14 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Nigeria | `NG` | `Africa/Lagos` | `UTC+01:00` | No |
 | Niue | `NU` | `Pacific/Niue` | `UTC-11:00` | No |
 | Norfolk Island | `NF` | `Pacific/Norfolk` | `UTC+12:00` | Yes |
-| North Macedonia | `MK` | `Europe/Skopje` | `UTC+02:00` | Yes |
+| North Macedonia | `MK` | `Europe/Skopje` | `UTC+01:00` | No |
 | Northern Mariana Islands | `MP` | `Pacific/Saipan` | `UTC+10:00` | No |
-| Norway | `NO` | `Europe/Oslo` | `UTC+02:00` | Yes |
+| Norway | `NO` | `Europe/Oslo` | `UTC+01:00` | No |
 | Oman | `OM` | `Asia/Muscat` | `UTC+04:00` | No |
 | Pakistan | `PK` | `Asia/Karachi` | `UTC+05:00` | No |
 | Palau | `PW` | `Pacific/Palau` | `UTC+09:00` | No |
-| Palestine | `PS` | `Asia/Gaza` | `UTC+03:00` | Yes |
-|  |  | `Asia/Hebron` | `UTC+03:00` | Yes |
+| Palestine | `PS` | `Asia/Gaza` | `UTC+02:00` | No |
+|  |  | `Asia/Hebron` | `UTC+02:00` | No |
 | Panama | `PA` | `America/Panama` | `UTC-05:00` | No |
 | Papua New Guinea | `PG` | `Pacific/Port_Moresby` | `UTC+10:00` | No |
 |  |  | `Pacific/Bougainville` | `UTC+11:00` | No |
@@ -323,13 +323,13 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Peru | `PE` | `America/Lima` | `UTC-05:00` | No |
 | Philippines | `PH` | `Asia/Manila` | `UTC+08:00` | No |
 | Pitcairn | `PN` | `Pacific/Pitcairn` | `UTC-08:00` | No |
-| Poland | `PL` | `Europe/Warsaw` | `UTC+02:00` | Yes |
-| Portugal | `PT` | `Europe/Lisbon` | `UTC+01:00` | Yes |
-|  |  | `Atlantic/Madeira` | `UTC+01:00` | Yes |
-|  |  | `Atlantic/Azores` | `UTC+00:00` | Yes |
+| Poland | `PL` | `Europe/Warsaw` | `UTC+01:00` | No |
+| Portugal | `PT` | `Europe/Lisbon` | `UTC+00:00` | No |
+|  |  | `Atlantic/Madeira` | `UTC+00:00` | No |
+|  |  | `Atlantic/Azores` | `UTC-01:00` | No |
 | Puerto Rico | `PR` | `America/Puerto_Rico` | `UTC-04:00` | No |
 | Qatar | `QA` | `Asia/Qatar` | `UTC+03:00` | No |
-| Romania | `RO` | `Europe/Bucharest` | `UTC+03:00` | Yes |
+| Romania | `RO` | `Europe/Bucharest` | `UTC+02:00` | No |
 | Russia | `RU` | `Europe/Kaliningrad` | `UTC+02:00` | No |
 |  |  | `Europe/Moscow` | `UTC+03:00` | No |
 |  |  | `Europe/Kirov` | `UTC+03:00` | No |
@@ -360,24 +360,24 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Réunion | `RE` | `Indian/Reunion` | `UTC+04:00` | No |
 | Samoa (American) | `AS` | `Pacific/Pago_Pago` | `UTC-11:00` | No |
 | Samoa (western) | `WS` | `Pacific/Apia` | `UTC+13:00` | No |
-| San Marino | `SM` | `Europe/San_Marino` | `UTC+02:00` | Yes |
+| San Marino | `SM` | `Europe/San_Marino` | `UTC+01:00` | No |
 | Sao Tome & Principe | `ST` | `Africa/Sao_Tome` | `UTC+00:00` | No |
 | Saudi Arabia | `SA` | `Asia/Riyadh` | `UTC+03:00` | No |
 | Senegal | `SN` | `Africa/Dakar` | `UTC+00:00` | No |
-| Serbia | `RS` | `Europe/Belgrade` | `UTC+02:00` | Yes |
+| Serbia | `RS` | `Europe/Belgrade` | `UTC+01:00` | No |
 | Seychelles | `SC` | `Indian/Mahe` | `UTC+04:00` | No |
 | Sierra Leone | `SL` | `Africa/Freetown` | `UTC+00:00` | No |
 | Singapore | `SG` | `Asia/Singapore` | `UTC+08:00` | No |
-| Slovakia | `SK` | `Europe/Bratislava` | `UTC+02:00` | Yes |
-| Slovenia | `SI` | `Europe/Ljubljana` | `UTC+02:00` | Yes |
+| Slovakia | `SK` | `Europe/Bratislava` | `UTC+01:00` | No |
+| Slovenia | `SI` | `Europe/Ljubljana` | `UTC+01:00` | No |
 | Solomon Islands | `SB` | `Pacific/Guadalcanal` | `UTC+11:00` | No |
 | Somalia | `SO` | `Africa/Mogadishu` | `UTC+03:00` | No |
 | South Africa | `ZA` | `Africa/Johannesburg` | `UTC+02:00` | No |
 | South Georgia & the South Sandwich Islands | `GS` | `Atlantic/South_Georgia` | `UTC-02:00` | No |
 | South Sudan | `SS` | `Africa/Juba` | `UTC+02:00` | No |
-| Spain | `ES` | `Europe/Madrid` | `UTC+02:00` | Yes |
-|  |  | `Africa/Ceuta` | `UTC+02:00` | Yes |
-|  |  | `Atlantic/Canary` | `UTC+01:00` | Yes |
+| Spain | `ES` | `Europe/Madrid` | `UTC+01:00` | No |
+|  |  | `Africa/Ceuta` | `UTC+01:00` | No |
+|  |  | `Atlantic/Canary` | `UTC+00:00` | No |
 | Sri Lanka | `LK` | `Asia/Colombo` | `UTC+05:30` | No |
 | St Barthelemy | `BL` | `America/St_Barthelemy` | `UTC-04:00` | No |
 | St Helena | `SH` | `Atlantic/St_Helena` | `UTC+00:00` | No |
@@ -389,9 +389,9 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | St Vincent | `VC` | `America/St_Vincent` | `UTC-04:00` | No |
 | Sudan | `SD` | `Africa/Khartoum` | `UTC+02:00` | No |
 | Suriname | `SR` | `America/Paramaribo` | `UTC-03:00` | No |
-| Svalbard & Jan Mayen | `SJ` | `Arctic/Longyearbyen` | `UTC+02:00` | Yes |
-| Sweden | `SE` | `Europe/Stockholm` | `UTC+02:00` | Yes |
-| Switzerland | `CH` | `Europe/Zurich` | `UTC+02:00` | Yes |
+| Svalbard & Jan Mayen | `SJ` | `Arctic/Longyearbyen` | `UTC+01:00` | No |
+| Sweden | `SE` | `Europe/Stockholm` | `UTC+01:00` | No |
+| Switzerland | `CH` | `Europe/Zurich` | `UTC+01:00` | No |
 | Syria | `SY` | `Asia/Damascus` | `UTC+03:00` | No |
 | Taiwan | `TW` | `Asia/Taipei` | `UTC+08:00` | No |
 | Tajikistan | `TJ` | `Asia/Dushanbe` | `UTC+05:00` | No |
@@ -410,7 +410,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 |  |  | `Pacific/Wake` | `UTC+12:00` | No |
 | Uganda | `UG` | `Africa/Kampala` | `UTC+03:00` | No |
 | Ukraine | `UA` | `Europe/Simferopol` | `UTC+03:00` | No |
-|  |  | `Europe/Kyiv` | `UTC+03:00` | Yes |
+|  |  | `Europe/Kyiv` | `UTC+02:00` | No |
 | United Arab Emirates | `AE` | `Asia/Dubai` | `UTC+04:00` | No |
 | United States | `US` | `America/New_York` | `UTC-04:00` | Yes |
 |  |  | `America/Detroit` | `UTC-04:00` | Yes |
@@ -445,7 +445,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Uzbekistan | `UZ` | `Asia/Samarkand` | `UTC+05:00` | No |
 |  |  | `Asia/Tashkent` | `UTC+05:00` | No |
 | Vanuatu | `VU` | `Pacific/Efate` | `UTC+11:00` | No |
-| Vatican City | `VA` | `Europe/Vatican` | `UTC+02:00` | Yes |
+| Vatican City | `VA` | `Europe/Vatican` | `UTC+01:00` | No |
 | Venezuela | `VE` | `America/Caracas` | `UTC-04:00` | No |
 | Vietnam | `VN` | `Asia/Ho_Chi_Minh` | `UTC+07:00` | No |
 | Virgin Islands (UK) | `VG` | `America/Tortola` | `UTC-04:00` | No |
@@ -455,7 +455,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Yemen | `YE` | `Asia/Aden` | `UTC+03:00` | No |
 | Zambia | `ZM` | `Africa/Lusaka` | `UTC+02:00` | No |
 | Zimbabwe | `ZW` | `Africa/Harare` | `UTC+02:00` | No |
-| Åland Islands | `AX` | `Europe/Mariehamn` | `UTC+03:00` | Yes |
+| Åland Islands | `AX` | `Europe/Mariehamn` | `UTC+02:00` | No |
 
 ## Author
 
