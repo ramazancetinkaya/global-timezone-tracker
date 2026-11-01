@@ -6,7 +6,7 @@ An automated reference tracking real-time UTC/GMT offsets, Daylight Saving Time 
 
 | Metric | Specification |
 | :--- | :--- |
-| Last Synchronization | 2026-10-25 03:42:37 UTC |
+| Last Synchronization | 2026-11-01 04:56:13 UTC |
 | Countries Tracked | 247 |
 | Timezones Tracked | 418 |
 | Update Cadence | Weekly (Every Sunday at 00:00 UTC) |
@@ -120,7 +120,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Burundi | `BI` | `Africa/Bujumbura` | `UTC+02:00` | No |
 | Cambodia | `KH` | `Asia/Phnom_Penh` | `UTC+07:00` | No |
 | Cameroon | `CM` | `Africa/Douala` | `UTC+01:00` | No |
-| Canada | `CA` | `America/St_Johns` | `UTC-02:30` | Yes |
+| Canada | `CA` | `America/St_Johns` | `UTC-03:30` | No |
 |  |  | `America/Halifax` | `UTC-03:00` | Yes |
 |  |  | `America/Glace_Bay` | `UTC-03:00` | Yes |
 |  |  | `America/Moncton` | `UTC-03:00` | Yes |
@@ -177,7 +177,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | East Timor | `TL` | `Asia/Dili` | `UTC+09:00` | No |
 | Ecuador | `EC` | `America/Guayaquil` | `UTC-05:00` | No |
 |  |  | `Pacific/Galapagos` | `UTC-06:00` | No |
-| Egypt | `EG` | `Africa/Cairo` | `UTC+03:00` | Yes |
+| Egypt | `EG` | `Africa/Cairo` | `UTC+02:00` | No |
 | El Salvador | `SV` | `America/El_Salvador` | `UTC-06:00` | No |
 | Equatorial Guinea | `GQ` | `Africa/Malabo` | `UTC+01:00` | No |
 | Eritrea | `ER` | `Africa/Asmara` | `UTC+03:00` | No |
@@ -385,7 +385,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | St Lucia | `LC` | `America/St_Lucia` | `UTC-04:00` | No |
 | St Maarten (Dutch) | `SX` | `America/Lower_Princes` | `UTC-04:00` | No |
 | St Martin (French) | `MF` | `America/Marigot` | `UTC-04:00` | No |
-| St Pierre & Miquelon | `PM` | `America/Miquelon` | `UTC-02:00` | Yes |
+| St Pierre & Miquelon | `PM` | `America/Miquelon` | `UTC-03:00` | No |
 | St Vincent | `VC` | `America/St_Vincent` | `UTC-04:00` | No |
 | Sudan | `SD` | `Africa/Khartoum` | `UTC+02:00` | No |
 | Suriname | `SR` | `America/Paramaribo` | `UTC-03:00` | No |

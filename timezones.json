@@ -713,9 +713,9 @@
     "zones": [
       {
         "timezone": "America/St_Johns",
-        "gmt_offset": "UTC-02:30",
-        "offset_seconds": -9000,
-        "is_dst": true
+        "gmt_offset": "UTC-03:30",
+        "offset_seconds": -12600,
+        "is_dst": false
       },
       {
         "timezone": "America/Halifax",
@@ -1223,9 +1223,9 @@
     "zones": [
       {
         "timezone": "Africa/Cairo",
-        "gmt_offset": "UTC+03:00",
-        "offset_seconds": 10800,
-        "is_dst": true
+        "gmt_offset": "UTC+02:00",
+        "offset_seconds": 7200,
+        "is_dst": false
       }
     ]
   },
@@ -3329,9 +3329,9 @@
     "zones": [
       {
         "timezone": "America/Miquelon",
-        "gmt_offset": "UTC-02:00",
-        "offset_seconds": -7200,
-        "is_dst": true
+        "gmt_offset": "UTC-03:00",
+        "offset_seconds": -10800,
+        "is_dst": false
       }
     ]
   },
