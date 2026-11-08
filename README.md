@@ -6,7 +6,7 @@ An automated reference tracking real-time UTC/GMT offsets, Daylight Saving Time 
 
 | Metric | Specification |
 | :--- | :--- |
-| Last Synchronization | 2026-11-01 04:56:13 UTC |
+| Last Synchronization | 2026-11-08 04:59:46 UTC |
 | Countries Tracked | 247 |
 | Timezones Tracked | 418 |
 | Update Cadence | Weekly (Every Sunday at 00:00 UTC) |
@@ -83,7 +83,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 |  |  | `Australia/Eucla` | `UTC+08:45` | No |
 | Austria | `AT` | `Europe/Vienna` | `UTC+01:00` | No |
 | Azerbaijan | `AZ` | `Asia/Baku` | `UTC+04:00` | No |
-| Bahamas | `BS` | `America/Nassau` | `UTC-04:00` | Yes |
+| Bahamas | `BS` | `America/Nassau` | `UTC-05:00` | No |
 | Bahrain | `BH` | `Asia/Bahrain` | `UTC+03:00` | No |
 | Bangladesh | `BD` | `Asia/Dhaka` | `UTC+06:00` | No |
 | Barbados | `BB` | `America/Barbados` | `UTC-04:00` | No |
@@ -91,7 +91,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Belgium | `BE` | `Europe/Brussels` | `UTC+01:00` | No |
 | Belize | `BZ` | `America/Belize` | `UTC-06:00` | No |
 | Benin | `BJ` | `Africa/Porto-Novo` | `UTC+01:00` | No |
-| Bermuda | `BM` | `Atlantic/Bermuda` | `UTC-03:00` | Yes |
+| Bermuda | `BM` | `Atlantic/Bermuda` | `UTC-04:00` | No |
 | Bhutan | `BT` | `Asia/Thimphu` | `UTC+06:00` | No |
 | Bolivia | `BO` | `America/La_Paz` | `UTC-04:00` | No |
 | Bosnia & Herzegovina | `BA` | `Europe/Sarajevo` | `UTC+01:00` | No |
@@ -121,23 +121,23 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Cambodia | `KH` | `Asia/Phnom_Penh` | `UTC+07:00` | No |
 | Cameroon | `CM` | `Africa/Douala` | `UTC+01:00` | No |
 | Canada | `CA` | `America/St_Johns` | `UTC-03:30` | No |
-|  |  | `America/Halifax` | `UTC-03:00` | Yes |
-|  |  | `America/Glace_Bay` | `UTC-03:00` | Yes |
-|  |  | `America/Moncton` | `UTC-03:00` | Yes |
-|  |  | `America/Goose_Bay` | `UTC-03:00` | Yes |
+|  |  | `America/Halifax` | `UTC-04:00` | No |
+|  |  | `America/Glace_Bay` | `UTC-04:00` | No |
+|  |  | `America/Moncton` | `UTC-04:00` | No |
+|  |  | `America/Goose_Bay` | `UTC-04:00` | No |
 |  |  | `America/Blanc-Sablon` | `UTC-04:00` | No |
-|  |  | `America/Toronto` | `UTC-04:00` | Yes |
-|  |  | `America/Iqaluit` | `UTC-04:00` | Yes |
+|  |  | `America/Toronto` | `UTC-05:00` | No |
+|  |  | `America/Iqaluit` | `UTC-05:00` | No |
 |  |  | `America/Atikokan` | `UTC-05:00` | No |
-|  |  | `America/Winnipeg` | `UTC-05:00` | Yes |
-|  |  | `America/Resolute` | `UTC-05:00` | Yes |
-|  |  | `America/Rankin_Inlet` | `UTC-05:00` | Yes |
+|  |  | `America/Winnipeg` | `UTC-05:00` | No |
+|  |  | `America/Resolute` | `UTC-06:00` | No |
+|  |  | `America/Rankin_Inlet` | `UTC-06:00` | No |
 |  |  | `America/Regina` | `UTC-06:00` | No |
 |  |  | `America/Swift_Current` | `UTC-06:00` | No |
-|  |  | `America/Edmonton` | `UTC-06:00` | Yes |
-|  |  | `America/Cambridge_Bay` | `UTC-06:00` | Yes |
-|  |  | `America/Inuvik` | `UTC-06:00` | Yes |
-|  |  | `America/Vancouver` | `UTC-07:00` | Yes |
+|  |  | `America/Edmonton` | `UTC-06:00` | No |
+|  |  | `America/Cambridge_Bay` | `UTC-07:00` | No |
+|  |  | `America/Inuvik` | `UTC-06:00` | No |
+|  |  | `America/Vancouver` | `UTC-07:00` | No |
 |  |  | `America/Creston` | `UTC-07:00` | No |
 |  |  | `America/Dawson_Creek` | `UTC-07:00` | No |
 |  |  | `America/Fort_Nelson` | `UTC-07:00` | No |
@@ -205,7 +205,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Greenland | `GL` | `America/Nuuk` | `UTC-02:00` | No |
 |  |  | `America/Danmarkshavn` | `UTC+00:00` | No |
 |  |  | `America/Scoresbysund` | `UTC-02:00` | No |
-|  |  | `America/Thule` | `UTC-03:00` | Yes |
+|  |  | `America/Thule` | `UTC-04:00` | No |
 | Grenada | `GD` | `America/Grenada` | `UTC-04:00` | No |
 | Guadeloupe | `GP` | `America/Guadeloupe` | `UTC-04:00` | No |
 | Guam | `GU` | `Pacific/Guam` | `UTC+10:00` | No |
@@ -214,7 +214,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Guinea | `GN` | `Africa/Conakry` | `UTC+00:00` | No |
 | Guinea-Bissau | `GW` | `Africa/Bissau` | `UTC+00:00` | No |
 | Guyana | `GY` | `America/Guyana` | `UTC-04:00` | No |
-| Haiti | `HT` | `America/Port-au-Prince` | `UTC-04:00` | Yes |
+| Haiti | `HT` | `America/Port-au-Prince` | `UTC-05:00` | No |
 | Honduras | `HN` | `America/Tegucigalpa` | `UTC-06:00` | No |
 | Hong Kong | `HK` | `Asia/Hong_Kong` | `UTC+08:00` | No |
 | Hungary | `HU` | `Europe/Budapest` | `UTC+01:00` | No |
@@ -276,14 +276,14 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 |  |  | `America/Cancun` | `UTC-05:00` | No |
 |  |  | `America/Merida` | `UTC-06:00` | No |
 |  |  | `America/Monterrey` | `UTC-06:00` | No |
-|  |  | `America/Matamoros` | `UTC-05:00` | Yes |
+|  |  | `America/Matamoros` | `UTC-06:00` | No |
 |  |  | `America/Chihuahua` | `UTC-06:00` | No |
-|  |  | `America/Ciudad_Juarez` | `UTC-06:00` | Yes |
-|  |  | `America/Ojinaga` | `UTC-05:00` | Yes |
+|  |  | `America/Ciudad_Juarez` | `UTC-07:00` | No |
+|  |  | `America/Ojinaga` | `UTC-06:00` | No |
 |  |  | `America/Mazatlan` | `UTC-07:00` | No |
 |  |  | `America/Bahia_Banderas` | `UTC-06:00` | No |
 |  |  | `America/Hermosillo` | `UTC-07:00` | No |
-|  |  | `America/Tijuana` | `UTC-07:00` | Yes |
+|  |  | `America/Tijuana` | `UTC-08:00` | No |
 | Micronesia | `FM` | `Pacific/Chuuk` | `UTC+10:00` | No |
 |  |  | `Pacific/Pohnpei` | `UTC+11:00` | No |
 |  |  | `Pacific/Kosrae` | `UTC+11:00` | No |
@@ -404,7 +404,7 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Tunisia | `TN` | `Africa/Tunis` | `UTC+01:00` | No |
 | Turkey | `TR` | `Europe/Istanbul` | `UTC+03:00` | No |
 | Turkmenistan | `TM` | `Asia/Ashgabat` | `UTC+05:00` | No |
-| Turks & Caicos Is | `TC` | `America/Grand_Turk` | `UTC-04:00` | Yes |
+| Turks & Caicos Is | `TC` | `America/Grand_Turk` | `UTC-05:00` | No |
 | Tuvalu | `TV` | `Pacific/Funafuti` | `UTC+12:00` | No |
 | US minor outlying islands | `UM` | `Pacific/Midway` | `UTC-11:00` | No |
 |  |  | `Pacific/Wake` | `UTC+12:00` | No |
@@ -412,34 +412,34 @@ The compiled `timezones.json` provides a clean and uniform structure suitable fo
 | Ukraine | `UA` | `Europe/Simferopol` | `UTC+03:00` | No |
 |  |  | `Europe/Kyiv` | `UTC+02:00` | No |
 | United Arab Emirates | `AE` | `Asia/Dubai` | `UTC+04:00` | No |
-| United States | `US` | `America/New_York` | `UTC-04:00` | Yes |
-|  |  | `America/Detroit` | `UTC-04:00` | Yes |
-|  |  | `America/Kentucky/Louisville` | `UTC-04:00` | Yes |
-|  |  | `America/Kentucky/Monticello` | `UTC-04:00` | Yes |
-|  |  | `America/Indiana/Indianapolis` | `UTC-04:00` | Yes |
-|  |  | `America/Indiana/Vincennes` | `UTC-04:00` | Yes |
-|  |  | `America/Indiana/Winamac` | `UTC-04:00` | Yes |
-|  |  | `America/Indiana/Marengo` | `UTC-04:00` | Yes |
-|  |  | `America/Indiana/Petersburg` | `UTC-04:00` | Yes |
-|  |  | `America/Indiana/Vevay` | `UTC-04:00` | Yes |
-|  |  | `America/Chicago` | `UTC-05:00` | Yes |
-|  |  | `America/Indiana/Tell_City` | `UTC-05:00` | Yes |
-|  |  | `America/Indiana/Knox` | `UTC-05:00` | Yes |
-|  |  | `America/Menominee` | `UTC-05:00` | Yes |
-|  |  | `America/North_Dakota/Center` | `UTC-05:00` | Yes |
-|  |  | `America/North_Dakota/New_Salem` | `UTC-05:00` | Yes |
-|  |  | `America/North_Dakota/Beulah` | `UTC-05:00` | Yes |
-|  |  | `America/Denver` | `UTC-06:00` | Yes |
-|  |  | `America/Boise` | `UTC-06:00` | Yes |
+| United States | `US` | `America/New_York` | `UTC-05:00` | No |
+|  |  | `America/Detroit` | `UTC-05:00` | No |
+|  |  | `America/Kentucky/Louisville` | `UTC-05:00` | No |
+|  |  | `America/Kentucky/Monticello` | `UTC-05:00` | No |
+|  |  | `America/Indiana/Indianapolis` | `UTC-05:00` | No |
+|  |  | `America/Indiana/Vincennes` | `UTC-05:00` | No |
+|  |  | `America/Indiana/Winamac` | `UTC-05:00` | No |
+|  |  | `America/Indiana/Marengo` | `UTC-05:00` | No |
+|  |  | `America/Indiana/Petersburg` | `UTC-05:00` | No |
+|  |  | `America/Indiana/Vevay` | `UTC-05:00` | No |
+|  |  | `America/Chicago` | `UTC-06:00` | No |
+|  |  | `America/Indiana/Tell_City` | `UTC-06:00` | No |
+|  |  | `America/Indiana/Knox` | `UTC-06:00` | No |
+|  |  | `America/Menominee` | `UTC-06:00` | No |
+|  |  | `America/North_Dakota/Center` | `UTC-06:00` | No |
+|  |  | `America/North_Dakota/New_Salem` | `UTC-06:00` | No |
+|  |  | `America/North_Dakota/Beulah` | `UTC-06:00` | No |
+|  |  | `America/Denver` | `UTC-07:00` | No |
+|  |  | `America/Boise` | `UTC-07:00` | No |
 |  |  | `America/Phoenix` | `UTC-07:00` | No |
-|  |  | `America/Los_Angeles` | `UTC-07:00` | Yes |
-|  |  | `America/Anchorage` | `UTC-08:00` | Yes |
-|  |  | `America/Juneau` | `UTC-08:00` | Yes |
-|  |  | `America/Sitka` | `UTC-08:00` | Yes |
-|  |  | `America/Metlakatla` | `UTC-08:00` | Yes |
-|  |  | `America/Yakutat` | `UTC-08:00` | Yes |
-|  |  | `America/Nome` | `UTC-08:00` | Yes |
-|  |  | `America/Adak` | `UTC-09:00` | Yes |
+|  |  | `America/Los_Angeles` | `UTC-08:00` | No |
+|  |  | `America/Anchorage` | `UTC-09:00` | No |
+|  |  | `America/Juneau` | `UTC-09:00` | No |
+|  |  | `America/Sitka` | `UTC-09:00` | No |
+|  |  | `America/Metlakatla` | `UTC-09:00` | No |
+|  |  | `America/Yakutat` | `UTC-09:00` | No |
+|  |  | `America/Nome` | `UTC-09:00` | No |
+|  |  | `America/Adak` | `UTC-10:00` | No |
 |  |  | `Pacific/Honolulu` | `UTC-10:00` | No |
 | Uruguay | `UY` | `America/Montevideo` | `UTC-03:00` | No |
 | Uzbekistan | `UZ` | `Asia/Samarkand` | `UTC+05:00` | No |

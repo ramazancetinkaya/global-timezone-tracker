@@ -359,9 +359,9 @@
     "zones": [
       {
         "timezone": "America/Nassau",
-        "gmt_offset": "UTC-04:00",
-        "offset_seconds": -14400,
-        "is_dst": true
+        "gmt_offset": "UTC-05:00",
+        "offset_seconds": -18000,
+        "is_dst": false
       }
     ]
   },
@@ -455,9 +455,9 @@
     "zones": [
       {
         "timezone": "Atlantic/Bermuda",
-        "gmt_offset": "UTC-03:00",
-        "offset_seconds": -10800,
-        "is_dst": true
+        "gmt_offset": "UTC-04:00",
+        "offset_seconds": -14400,
+        "is_dst": false
       }
     ]
   },
@@ -719,27 +719,27 @@
       },
       {
         "timezone": "America/Halifax",
-        "gmt_offset": "UTC-03:00",
-        "offset_seconds": -10800,
-        "is_dst": true
+        "gmt_offset": "UTC-04:00",
+        "offset_seconds": -14400,
+        "is_dst": false
       },
       {
         "timezone": "America/Glace_Bay",
-        "gmt_offset": "UTC-03:00",
-        "offset_seconds": -10800,
-        "is_dst": true
+        "gmt_offset": "UTC-04:00",
+        "offset_seconds": -14400,
+        "is_dst": false
       },
       {
         "timezone": "America/Moncton",
-        "gmt_offset": "UTC-03:00",
-        "offset_seconds": -10800,
-        "is_dst": true
+        "gmt_offset": "UTC-04:00",
+        "offset_seconds": -14400,
+        "is_dst": false
       },
       {
         "timezone": "America/Goose_Bay",
-        "gmt_offset": "UTC-03:00",
-        "offset_seconds": -10800,
-        "is_dst": true
+        "gmt_offset": "UTC-04:00",
+        "offset_seconds": -14400,
+        "is_dst": false
       },
       {
         "timezone": "America/Blanc-Sablon",
@@ -749,15 +749,15 @@
       },
       {
         "timezone": "America/Toronto",
-        "gmt_offset": "UTC-04:00",
-        "offset_seconds": -14400,
-        "is_dst": true
+        "gmt_offset": "UTC-05:00",
+        "offset_seconds": -18000,
+        "is_dst": false
       },
       {
         "timezone": "America/Iqaluit",
-        "gmt_offset": "UTC-04:00",
-        "offset_seconds": -14400,
-        "is_dst": true
+        "gmt_offset": "UTC-05:00",
+        "offset_seconds": -18000,
+        "is_dst": false
       },
       {
         "timezone": "America/Atikokan",
@@ -769,19 +769,19 @@
         "timezone": "America/Winnipeg",
         "gmt_offset": "UTC-05:00",
         "offset_seconds": -18000,
-        "is_dst": true
+        "is_dst": false
       },
       {
         "timezone": "America/Resolute",
-        "gmt_offset": "UTC-05:00",
-        "offset_seconds": -18000,
-        "is_dst": true
+        "gmt_offset": "UTC-06:00",
+        "offset_seconds": -21600,
+        "is_dst": false
       },
       {
         "timezone": "America/Rankin_Inlet",
-        "gmt_offset": "UTC-05:00",
-        "offset_seconds": -18000,
-        "is_dst": true
+        "gmt_offset": "UTC-06:00",
+        "offset_seconds": -21600,
+        "is_dst": false
       },
       {
         "timezone": "America/Regina",
@@ -799,25 +799,25 @@
         "timezone": "America/Edmonton",
         "gmt_offset": "UTC-06:00",
         "offset_seconds": -21600,
-        "is_dst": true
+        "is_dst": false
       },
       {
         "timezone": "America/Cambridge_Bay",
-        "gmt_offset": "UTC-06:00",
-        "offset_seconds": -21600,
-        "is_dst": true
+        "gmt_offset": "UTC-07:00",
+        "offset_seconds": -25200,
+        "is_dst": false
       },
       {
         "timezone": "America/Inuvik",
         "gmt_offset": "UTC-06:00",
         "offset_seconds": -21600,
-        "is_dst": true
+        "is_dst": false
       },
       {
         "timezone": "America/Vancouver",
         "gmt_offset": "UTC-07:00",
         "offset_seconds": -25200,
-        "is_dst": true
+        "is_dst": false
       },
       {
         "timezone": "America/Creston",
@@ -1523,9 +1523,9 @@
       },
       {
         "timezone": "America/Thule",
-        "gmt_offset": "UTC-03:00",
-        "offset_seconds": -10800,
-        "is_dst": true
+        "gmt_offset": "UTC-04:00",
+        "offset_seconds": -14400,
+        "is_dst": false
       }
     ]
   },
@@ -1631,9 +1631,9 @@
     "zones": [
       {
         "timezone": "America/Port-au-Prince",
-        "gmt_offset": "UTC-04:00",
-        "offset_seconds": -14400,
-        "is_dst": true
+        "gmt_offset": "UTC-05:00",
+        "offset_seconds": -18000,
+        "is_dst": false
       }
     ]
   },
@@ -2273,9 +2273,9 @@
       },
       {
         "timezone": "America/Matamoros",
-        "gmt_offset": "UTC-05:00",
-        "offset_seconds": -18000,
-        "is_dst": true
+        "gmt_offset": "UTC-06:00",
+        "offset_seconds": -21600,
+        "is_dst": false
       },
       {
         "timezone": "America/Chihuahua",
@@ -2285,15 +2285,15 @@
       },
       {
         "timezone": "America/Ciudad_Juarez",
-        "gmt_offset": "UTC-06:00",
-        "offset_seconds": -21600,
-        "is_dst": true
+        "gmt_offset": "UTC-07:00",
+        "offset_seconds": -25200,
+        "is_dst": false
       },
       {
         "timezone": "America/Ojinaga",
-        "gmt_offset": "UTC-05:00",
-        "offset_seconds": -18000,
-        "is_dst": true
+        "gmt_offset": "UTC-06:00",
+        "offset_seconds": -21600,
+        "is_dst": false
       },
       {
         "timezone": "America/Mazatlan",
@@ -2315,9 +2315,9 @@
       },
       {
         "timezone": "America/Tijuana",
-        "gmt_offset": "UTC-07:00",
-        "offset_seconds": -25200,
-        "is_dst": true
+        "gmt_offset": "UTC-08:00",
+        "offset_seconds": -28800,
+        "is_dst": false
       }
     ]
   },
@@ -3557,9 +3557,9 @@
     "zones": [
       {
         "timezone": "America/Grand_Turk",
-        "gmt_offset": "UTC-04:00",
-        "offset_seconds": -14400,
-        "is_dst": true
+        "gmt_offset": "UTC-05:00",
+        "offset_seconds": -18000,
+        "is_dst": false
       }
     ]
   },
@@ -3641,117 +3641,117 @@
     "zones": [
       {
         "timezone": "America/New_York",
-        "gmt_offset": "UTC-04:00",
-        "offset_seconds": -14400,
-        "is_dst": true
+        "gmt_offset": "UTC-05:00",
+        "offset_seconds": -18000,
+        "is_dst": false
       },
       {
         "timezone": "America/Detroit",
-        "gmt_offset": "UTC-04:00",
-        "offset_seconds": -14400,
-        "is_dst": true
+        "gmt_offset": "UTC-05:00",
+        "offset_seconds": -18000,
+        "is_dst": false
       },
       {
         "timezone": "America/Kentucky/Louisville",
-        "gmt_offset": "UTC-04:00",
-        "offset_seconds": -14400,
-        "is_dst": true
+        "gmt_offset": "UTC-05:00",
+        "offset_seconds": -18000,
+        "is_dst": false
       },
       {
         "timezone": "America/Kentucky/Monticello",
-        "gmt_offset": "UTC-04:00",
-        "offset_seconds": -14400,
-        "is_dst": true
+        "gmt_offset": "UTC-05:00",
+        "offset_seconds": -18000,
+        "is_dst": false
       },
       {
         "timezone": "America/Indiana/Indianapolis",
-        "gmt_offset": "UTC-04:00",
-        "offset_seconds": -14400,
-        "is_dst": true
+        "gmt_offset": "UTC-05:00",
+        "offset_seconds": -18000,
+        "is_dst": false
       },
       {
         "timezone": "America/Indiana/Vincennes",
-        "gmt_offset": "UTC-04:00",
-        "offset_seconds": -14400,
-        "is_dst": true
+        "gmt_offset": "UTC-05:00",
+        "offset_seconds": -18000,
+        "is_dst": false
       },
       {
         "timezone": "America/Indiana/Winamac",
-        "gmt_offset": "UTC-04:00",
-        "offset_seconds": -14400,
-        "is_dst": true
+        "gmt_offset": "UTC-05:00",
+        "offset_seconds": -18000,
+        "is_dst": false
       },
       {
         "timezone": "America/Indiana/Marengo",
-        "gmt_offset": "UTC-04:00",
-        "offset_seconds": -14400,
-        "is_dst": true
+        "gmt_offset": "UTC-05:00",
+        "offset_seconds": -18000,
+        "is_dst": false
       },
       {
         "timezone": "America/Indiana/Petersburg",
-        "gmt_offset": "UTC-04:00",
-        "offset_seconds": -14400,
-        "is_dst": true
+        "gmt_offset": "UTC-05:00",
+        "offset_seconds": -18000,
+        "is_dst": false
       },
       {
         "timezone": "America/Indiana/Vevay",
-        "gmt_offset": "UTC-04:00",
-        "offset_seconds": -14400,
-        "is_dst": true
+        "gmt_offset": "UTC-05:00",
+        "offset_seconds": -18000,
+        "is_dst": false
       },
       {
         "timezone": "America/Chicago",
-        "gmt_offset": "UTC-05:00",
-        "offset_seconds": -18000,
-        "is_dst": true
+        "gmt_offset": "UTC-06:00",
+        "offset_seconds": -21600,
+        "is_dst": false
       },
       {
         "timezone": "America/Indiana/Tell_City",
-        "gmt_offset": "UTC-05:00",
-        "offset_seconds": -18000,
-        "is_dst": true
+        "gmt_offset": "UTC-06:00",
+        "offset_seconds": -21600,
+        "is_dst": false
       },
       {
         "timezone": "America/Indiana/Knox",
-        "gmt_offset": "UTC-05:00",
-        "offset_seconds": -18000,
-        "is_dst": true
+        "gmt_offset": "UTC-06:00",
+        "offset_seconds": -21600,
+        "is_dst": false
       },
       {
         "timezone": "America/Menominee",
-        "gmt_offset": "UTC-05:00",
-        "offset_seconds": -18000,
-        "is_dst": true
+        "gmt_offset": "UTC-06:00",
+        "offset_seconds": -21600,
+        "is_dst": false
       },
       {
         "timezone": "America/North_Dakota/Center",
-        "gmt_offset": "UTC-05:00",
-        "offset_seconds": -18000,
-        "is_dst": true
+        "gmt_offset": "UTC-06:00",
+        "offset_seconds": -21600,
+        "is_dst": false
       },
       {
         "timezone": "America/North_Dakota/New_Salem",
-        "gmt_offset": "UTC-05:00",
-        "offset_seconds": -18000,
-        "is_dst": true
+        "gmt_offset": "UTC-06:00",
+        "offset_seconds": -21600,
+        "is_dst": false
       },
       {
         "timezone": "America/North_Dakota/Beulah",
-        "gmt_offset": "UTC-05:00",
-        "offset_seconds": -18000,
-        "is_dst": true
+        "gmt_offset": "UTC-06:00",
+        "offset_seconds": -21600,
+        "is_dst": false
       },
       {
         "timezone": "America/Denver",
-        "gmt_offset": "UTC-06:00",
-        "offset_seconds": -21600,
-        "is_dst": true
+        "gmt_offset": "UTC-07:00",
+        "offset_seconds": -25200,
+        "is_dst": false
       },
       {
         "timezone": "America/Boise",
-        "gmt_offset": "UTC-06:00",
-        "offset_seconds": -21600,
-        "is_dst": true
+        "gmt_offset": "UTC-07:00",
+        "offset_seconds": -25200,
+        "is_dst": false
       },
       {
         "timezone": "America/Phoenix",
@@ -3761,51 +3761,51 @@
       },
       {
         "timezone": "America/Los_Angeles",
-        "gmt_offset": "UTC-07:00",
-        "offset_seconds": -25200,
-        "is_dst": true
+        "gmt_offset": "UTC-08:00",
+        "offset_seconds": -28800,
+        "is_dst": false
       },
       {
         "timezone": "America/Anchorage",
-        "gmt_offset": "UTC-08:00",
-        "offset_seconds": -28800,
-        "is_dst": true
+        "gmt_offset": "UTC-09:00",
+        "offset_seconds": -32400,
+        "is_dst": false
       },
       {
         "timezone": "America/Juneau",
-        "gmt_offset": "UTC-08:00",
-        "offset_seconds": -28800,
-        "is_dst": true
+        "gmt_offset": "UTC-09:00",
+        "offset_seconds": -32400,
+        "is_dst": false
       },
       {
         "timezone": "America/Sitka",
-        "gmt_offset": "UTC-08:00",
-        "offset_seconds": -28800,
-        "is_dst": true
+        "gmt_offset": "UTC-09:00",
+        "offset_seconds": -32400,
+        "is_dst": false
       },
       {
         "timezone": "America/Metlakatla",
-        "gmt_offset": "UTC-08:00",
-        "offset_seconds": -28800,
-        "is_dst": true
+        "gmt_offset": "UTC-09:00",
+        "offset_seconds": -32400,
+        "is_dst": false
       },
       {
         "timezone": "America/Yakutat",
-        "gmt_offset": "UTC-08:00",
-        "offset_seconds": -28800,
-        "is_dst": true
+        "gmt_offset": "UTC-09:00",
+        "offset_seconds": -32400,
+        "is_dst": false
       },
       {
         "timezone": "America/Nome",
-        "gmt_offset": "UTC-08:00",
-        "offset_seconds": -28800,
-        "is_dst": true
+        "gmt_offset": "UTC-09:00",
+        "offset_seconds": -32400,
+        "is_dst": false
       },
       {
         "timezone": "America/Adak",
-        "gmt_offset": "UTC-09:00",
-        "offset_seconds": -32400,
-        "is_dst": true
+        "gmt_offset": "UTC-10:00",
+        "offset_seconds": -36000,
+        "is_dst": false
       },
       {
         "timezone": "Pacific/Honolulu",
